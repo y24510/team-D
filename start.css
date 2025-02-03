@@ -1,1 +1,42 @@
+body {
+    font-siza:70px;
+    font-family
+    background-color:#e6e6fa;
+    margin:0;
+    padding:0;
+    height: 100vh; 
+}
 
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+.score {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color:
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: 66cdaa;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn:active {
+    background-color: #3e8e41;
+}
+
+  
