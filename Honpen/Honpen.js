@@ -1,0 +1,1 @@
+localStorage.setItem('00',0,[Qsam],[Asam1],[Asam2],[Asam3],[Asam4])
