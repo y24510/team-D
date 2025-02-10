@@ -1,0 +1,21 @@
+h1,h2,p{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 150px;
+    
+    
+}
+.kekka{
+    background-color: yellow;
+    margin:150px 150px;
+}
+h1{
+    font-size: 90px;
+}
+h2{
+    font-size: 50px;
+}
+.zenkai{
+    background-color: greenyellow;
+}
