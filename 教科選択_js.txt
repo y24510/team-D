@@ -1,0 +1,22 @@
+.base {
+	padding: 10px;
+	background-color: #8B4513; 
+	border:solid 5px white;
+	border-radius: 20px;
+	display: flex;
+}
+
+.swi {
+	width: 600px;
+	margin: auto;
+}
+
+.Eng{
+	background-color: purple;
+}
+.Sya{
+background-color: yellow;
+}
+.Sci{
+background-color: green;
+}

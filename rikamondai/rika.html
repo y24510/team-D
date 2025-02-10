@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理科のクイズ</title>
+   
+</head>
+<body>
+
+    <h1>理科のクイズ</h1>
+
+    <div id="quiz-container">
+    </div>
+
+    <button onclick="checkAnswers()">結果を確認</button>
+
+    <p class="result" id="result"></p>
+
+    <script>
+        // 問題と選択肢
+        const questions = [
+            {
+                question: "1. 太陽の光が地球に届く時間はおおよそ何分間か？",
+                options: ["5分", "8分", "12分", "15分"],
+                correctAnswer: 1
+            },
+            {
+                question: "2. 水が沸騰(ふっとう)する温度は何度か？",
+                options: ["50度", "100度", "150度", "200度"],
+                correctAnswer: 1
+            },
+            {
+                question: "3. 人間の体に必要な栄養素のうち、主にエネルギー源となるのはどれか？",
+                options: ["ビタミン", "脂質", "炭水化物", "ミネラル"],
+                correctAnswer: 2
+            },
+            {
+                question: "4. 植物が光合成を行うために必要なものは何か？",
+                options: ["酸素", "水", "二酸化炭素", "肥料"],
+                correctAnswer: 2
+            },
+            {
+                question: "5. 水の三態とは何か？",
+                options: ["固体、液体、気体", "水、氷、蒸気", "氷、蒸気、液体", "水、空気、氷"],
+                correctAnswer: 0
+            },
+            {
+                question: "6. 地球の内部で最も高温の場所はどこか？",
+                options: ["地殻", "マントル", "外核", "内核"],
+                correctAnswer: 3
+            },
+            {
+                question: "7. 鳥が飛ぶために重要な器官はどれか？",
+                options: ["足", "羽", "嘴(くちばし)", "爪"],
+                correctAnswer: 1
+            },
+            {
+                question: "8. 水の状態変化で、液体が気体になる現象を何と言うか？",
+                options: ["凝固", "蒸発", "融解(ゆうかい)", "凝縮(ぎょうしゅく)"],
+                correctAnswer: 1
+            },
+            {
+                question: "9. 地球を構成する層で、最も厚い層はどれか？",
+                options: ["地殻", "マントル", "外核", "内核"],
+                correctAnswer: 1
+            },
+            {
+                question: "10. 風が吹く原因は何か？",
+                options: ["大気の圧力の違い", "太陽の光", "地球の自転", "水蒸気の量"],
+                correctAnswer: 0
+            }
+        ];
+
+        // クイズを表示する関数
+        function displayQuiz() {
+            const quizContainer = document.getElementById("quiz-container");
+            quizContainer.innerHTML = ""; // 既存のコンテンツをクリア
+
+            questions.forEach((question, index) => {
+                const questionElement = document.createElement("div");
+                questionElement.classList.add("question");
+
+                questionElement.innerHTML = `
+                    <p>${question.question}</p>
+                    <ul class="answers">
+                        ${question.options.map((option, i) => `
+                            <li>
+                                <input type="radio" name="question${index}" value="${i}">
+                                ${option}
+                            </li>
+                        `).join('')}
+                    </ul>
+                `;
+                quizContainer.appendChild(questionElement);
+            });
+        }
+
+        // 正解をチェックする関数
+        function checkAnswers() {
+            let correctCount = 0;
+
+            questions.forEach((question, index) => {
+                const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
+                if (selectedOption && parseInt(selectedOption.value) === question.correctAnswer) {
+                    correctCount++;
+                }
+            });
+
+            const resultElement = document.getElementById("result");
+            resultElement.textContent = `あなたの正解数は ${correctCount} / 10 です。`;
+
+            if (correctCount === 10) {
+                resultElement.style.color = "green";
+            } else {
+                resultElement.style.color = "red";
+            }
+        }
+
+        // クイズを表示
+        displayQuiz();
+    </script>
+
+</body>
+</html>
