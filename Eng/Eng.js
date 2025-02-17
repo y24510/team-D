@@ -16,6 +16,51 @@ const questions = [
     {
         question: "2. 水が沸騰(ふっとう)する温度は何度か？",
         options: ["50度", "100度", "150度", "200度"],
+        correctAnswer: 2
+    },
+    {
+        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
+        options: ["50度", "100度", "150度", "200度"],
+        correctAnswer: 3
+    },
+    {
+        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
+        options: ["50度", "100度", "150度", "200度"],
+        correctAnswer: 4
+    },
+    {
+        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
+        options: ["50度", "100度", "150度", "200度"],
+        correctAnswer: 5
+    },
+    {
+        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
+        options: ["50度", "100度", "150度", "200度"],
+        correctAnswer: 6
+    },
+    {
+        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
+        options: ["50度", "100度", "150度", "200度"],
+        correctAnswer: 7
+    },
+    {
+        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
+        options: ["50度", "100度", "150度", "200度"],
+        correctAnswer: 1
+    },
+    {
+        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
+        options: ["50度", "100度", "150度", "200度"],
+        correctAnswer: 1
+    },
+    {
+        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
+        options: ["50度", "100度", "150度", "200度"],
+        correctAnswer: 1
+    },
+    {
+        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
+        options: ["50度", "100度", "150度", "200度"],
         correctAnswer: 1
     },
    
