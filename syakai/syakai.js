@@ -31,7 +31,7 @@ const questions = [
     {
         question: "5. 平安時代が始まった年はどれですか？",
         options: ["710年", "794年", "1185年", "1603年"], 
-        correctAnswer: 0
+        correctAnswer: 1
     },
     {
         question: "6. 日本の国旗の正式な名前は何ですか？",
@@ -147,4 +147,7 @@ function checkAnswers() {
     } else {
         resultElement.style.color = "red";
     }
+}
+function navigateToAnotherPage(){
+    window.location.href="../Honpen/Honpen.html";
 }
