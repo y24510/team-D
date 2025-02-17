@@ -1,0 +1,63 @@
+body {
+    background-color: #FFDEAD;
+    color: #8b4513;
+    width: auto;
+    text-align: center;
+}
+/*ここは1ゲーム共通*/
+.Kyo-tu {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffe0;
+    padding: 5px;
+    margin: 3px;
+}
+.Kamoku_Num{
+    border: solid 2px #8b4513;
+    padding: 5px 7px;
+    margin: 2px;
+}
+.Score_Num{
+    border: solid 2px #8b4513;
+    padding: 5px 7px;
+    margin: 2px;
+}
+.Nanmonme_Num{
+    border: solid 2px #8b4513;
+    padding: 5px 7px;
+    margin: 2px;
+}
+/*問題ごとに変わる*/
+.Quiz{
+    background-color: #E0FFFF;
+    margin: 5px;
+    padding: 20ps;
+}
+.Migiyose{
+    height: 30px;
+}
+.Quiz_Timer{
+    float: right;
+    border: solid black 3px;
+    background-color: white;
+    color: black;
+}
+.Quiz_Q{
+    border: #8b4513 5px solid;
+    background-color: green;
+    color: white;
+    margin: 5px;
+    padding: 100px;
+}
+.Quiz_AnsBox5{
+    display: flex;
+}
+.Quiz_AnsBoxLR{
+    margin: 5px;
+}
+.Quiz_AnsBox{
+    margin: 3px;
+    border: black solid 2px;
+    background-color: white;
+    padding: 7px 10px;
+}
