@@ -1,22 +1,63 @@
 .base {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 500px;
 	padding: 10px;
-	background-color: #8B4513; 
+	background-color: #b0c4de; 
 	border:solid 5px white;
 	border-radius: 20px;
 	display: flex;
+	justify-content: center;
 }
 
-.swi {
-	width: 600px;
+.swi_Eng {
+	width: 500px;
 	margin: auto;
+	border: solid 5px 8B4513;
+	background-color: #FFE4E1;
+	margin: 20px;
+	display: flex;
 }
 
-.Eng{
-	background-color: purple;
+.swi_Sya {
+	width: 500px;
+	margin: auto;
+	border: solid 5px 8B4513;
+	background-color: #E0FFFF;
+	margin: 20px;
+	display: flex;
 }
-.Sya{
-background-color: yellow;
+
+.swi_Sci {
+	width: 500px;
+	margin: auto;
+	border: solid 5px 8B4513;
+	background-color: #FFFFE0;
+	margin: 20px;
+	display: flex;
+
 }
-.Sci{
-background-color: green;
+.image {
+	width:200px;
+	height: 200px;
+	object-fit: cover;
+	float: left;
+}
+.return {
+	justify-content: center;
+	width: 200px;
+	height: 50px;
+	border: solid black 2px;
+	border-radius: 10px;
+	background-color: #ffa500;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Architects Daughter", cursive,"Zen Kurenaido", sans-serif;
+    font-weight: 400;
+	color: #000080;
+	border: solid black 4px;
+	background-color: #afeeee;
 }
