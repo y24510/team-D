@@ -46,24 +46,18 @@ const questions = [
     {
         question: "2. 水が沸騰(ふっとう)する温度は何度か？",
         options: ["50度", "100度", "150度", "200度"],
-        correctAnswer: 1
+        correctAnswer: 8
     },
     {
         question: "2. 水が沸騰(ふっとう)する温度は何度か？",
         options: ["50度", "100度", "150度", "200度"],
-        correctAnswer: 1
+        correctAnswer: 9
     },
     {
         question: "2. 水が沸騰(ふっとう)する温度は何度か？",
         options: ["50度", "100度", "150度", "200度"],
-        correctAnswer: 1
-    },
-    {
-        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
-        options: ["50度", "100度", "150度", "200度"],
-        correctAnswer: 1
-    },
-   
+        correctAnswer: 10
+    }   
 ];
 
 // クイズを表示する関数
