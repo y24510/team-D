@@ -55,7 +55,25 @@ body {
 .Quiz_AnsBoxLR{
     margin: 5px;
 }
-.Quiz_AnsBox{
+.Quiz_AnsBox_1{
+    margin: 3px;
+    border: black solid 2px;
+    background-color: white;
+    padding: 7px 10px;
+}
+.Quiz_AnsBox_2{
+    margin: 3px;
+    border: black solid 2px;
+    background-color: white;
+    padding: 7px 10px;
+}
+.Quiz_AnsBox_3{
+    margin: 3px;
+    border: black solid 2px;
+    background-color: white;
+    padding: 7px 10px;
+}
+.Quiz_AnsBox_4{
     margin: 3px;
     border: black solid 2px;
     background-color: white;

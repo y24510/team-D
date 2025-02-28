@@ -12,22 +12,20 @@ console.log("Qは"+Qlibrary[Kind_Q][0]); */
 
 let now = 0; //進行度
 
-function SugoiRandamu(taku){ //コピペしたやつ　重複しない乱数を生成
+function SugoiRandamu(R,x){ //コピペしたやつ　重複しない乱数を生成
     var arr = [1,2,3,4];
     var a = arr.length;
 
     //シャッフルアルゴリズム
     while (a) {
-        var j = Math.floor( Math.random() * a );
+        var j = Math.floor( R * a );
         var t = arr[--a];
         arr[a] = arr[j];
         arr[j] = t;
     }
     //シャッフルされた配列の要素を順番に表示する
-    arr.forEach( function( value ) {console.log( value )} );
-    for(i=0;i<=4;i++){
-        taku[i] = arr[i];
-    }
+    //arr.forEach( function( value ) {console.log( value )} );
+    return arr[x];
 }
 //制限時間のうんぬん
 const nowtime = document.querySelector(".Quiz_Timer")
@@ -50,7 +48,11 @@ function  MakeQ(){
 }
 
 const quesion = document.querySelector(".Quiz_Q");
-const AnsBox1 = document.querySelector(".Quiz_Ansbos")
+const AB0 = document.querySelector(".Quiz_AnsBox_1");
+const AB1 = document.querySelector(".Quiz_AnsBox_2");
+const AB2 = document.querySelector(".Quiz_AnsBox_3");
+const AB3 = document.querySelector(".Quiz_AnsBox_4");
+
 //問題が終わるときの処理
 function FinQ(){
     //タイマー類を全部止める
@@ -59,11 +61,23 @@ function FinQ(){
     //問題文を上書き
     quesion.innerHTML = `fin`;
 }
+function Set_Ans(i,j,Q){
+    AB0.innerHTML = `foo`;
+    let use = "AB" + i;
+    console.log(use);
+    use.innerHTML = `
+        test
+    `;
+}
 //問題実行中のやつ
 function MainQ(Q){
     //QライブラリのQ番目の問題を　HTMLに
     quesion.innerHTML = `${Qlibrary[Q][0]}`;
     TimerQ();
-    let taku = [];
-    SugoiRandamu(taku);
+    let R = Math.random();
+    for(i=0;i<=3;i++){
+        console.log(SugoiRandamu(R,i));
+        Set_Ans(i,SugoiRandamu(R,i),Q);
+    }
+
 }
