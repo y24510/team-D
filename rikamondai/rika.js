@@ -163,7 +163,7 @@ function checkAnswers() {
     const resultElement = document.getElementById("result");
     const a=document.getElementById("a");
     result.innerHTML = `あなたの正解数は ${correctCount} / ${questions.length} です！
-    <a href="./../start.html"><br>ホームに戻る</a>`;
+    <a href="./../Honpen/Honpen.html"><br>ホームに戻る</a>`;
     
 
    
