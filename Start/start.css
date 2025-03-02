@@ -48,20 +48,3 @@ body {
     background-color: #45a049;
 }
 
-/* 自己ベストスコアのスタイル */
-.score {
-    margin-top: 20px;
-    background-color: #ffffffe4;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-}
-
-/* 自己ベストテキスト */
-.score p {
-    font-size:25px;
-    color: #333;
-    text-align: center;
-}

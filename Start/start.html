@@ -11,24 +11,7 @@
         <h1>小学生向けクイズ</h1>
         <a href="./../Honpen/Honpen.html" class="btn">ゲームスタート</a>
     </div>
-    <div class="score">
-        <p>自己ベストスコア: <span id="bestScore"></span>/30</p>
-    </div>
-    <script>
-        window.onload = function() {
-            // ローカルストレージから自己ベストスコアを取得
-            let bestScore = localStorage.getItem('bestScore');
-    
-            // bestScoreがnullの場合0を表示
-            if (!bestScore) {
-                bestScore = 0;
-            }
-    
-            // 取得したスコアをHTMLに反映
-            document.getElementById('bestScore').textContent = bestScore;
-        };
-    </script>
-    
+   
 <footer class="footer">
 <div class="gazou">
 
