@@ -1,63 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
 .base {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	height: 500px;
-	padding: 10px;
 	background-color: #b0c4de; 
 	border:solid 5px white;
 	border-radius: 20px;
-	display: flex;
 	justify-content: center;
+	padding: 10px;
 }
 
 .swi_Eng {
 	width: 500px;
-	margin: auto;
-	border: solid 5px 8B4513;
 	background-color: #FFE4E1;
-	margin: 20px;
-	display: flex;
+	border-radius: 20px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 10px;
 }
 
 .swi_Sya {
 	width: 500px;
-	margin: auto;
-	border: solid 5px 8B4513;
 	background-color: #E0FFFF;
-	margin: 20px;
-	display: flex;
+	border-radius: 20px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 10px;
 }
 
 .swi_Sci {
 	width: 500px;
-	margin: auto;
-	border: solid 5px 8B4513;
 	background-color: #FFFFE0;
-	margin: 20px;
-	display: flex;
-
+	border-radius: 20px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 10px;
 }
 .image {
-	width:200px;
+	width:auto;
 	height: 200px;
 	object-fit: cover;
-	float: left;
 }
-.return {
+.swi_Ret {
 	justify-content: center;
 	width: 200px;
 	height: 50px;
-	border: solid black 2px;
 	border-radius: 10px;
 	background-color: #ffa500;
 }
 
 h1 {
-	text-align: center;
-	font-family: "Architects Daughter", cursive,"Zen Kurenaido", sans-serif;
-    font-weight: 400;
 	color: #000080;
-	border: solid black 4px;
-	background-color: #afeeee;
 }

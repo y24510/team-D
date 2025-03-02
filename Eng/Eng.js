@@ -9,54 +9,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const questions = [
     {
-        question: "1. 太陽の光が地球に届く時間はおおよそ何分間か？",
-        options: ["5分", "8分", "12分", "15分"],
-        correctAnswer: 1
-    },
-    {
-        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
-        options: ["50度", "100度", "150度", "200度"],
+        question: "1. この単語の意味は？ [twelve]",
+        options: ["5", "8", "12", "20"],
         correctAnswer: 2
     },
     {
-        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
-        options: ["50度", "100度", "150度", "200度"],
+        question: "2. この単語の意味は？ [twenty]",
+        options: ["5", "8", "12", "20"],
         correctAnswer: 3
     },
     {
-        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
-        options: ["50度", "100度", "150度", "200度"],
-        correctAnswer: 4
+        question: "3. この単語の意味は？ [minute]",
+        options: ["秒", "分", "時間", "日"],
+        correctAnswer: 1
     },
     {
-        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
-        options: ["50度", "100度", "150度", "200度"],
-        correctAnswer: 5
+        question: "4. この単語の意味は？ [time]",
+        options: ["秒", "時間", "週", "年"],
+        correctAnswer: 1
     },
     {
-        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
-        options: ["50度", "100度", "150度", "200度"],
-        correctAnswer: 6
+        question: "5. この単語の意味は？ [day]",
+        options: ["分", "日", "月", "年"],
+        correctAnswer: 1
     },
     {
-        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
-        options: ["50度", "100度", "150度", "200度"],
-        correctAnswer: 7
+        question: "6. この単語の意味は？ [Monday]",
+        options: ["日曜", "月曜", "火曜", "水曜"],
+        correctAnswer: 1
     },
     {
-        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
-        options: ["50度", "100度", "150度", "200度"],
-        correctAnswer: 8
+        question: "7. この単語の意味は？ [Tuesday]",
+        options: ["火曜", "水曜", "木曜", "金曜"],
+        correctAnswer: 0
     },
     {
-        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
-        options: ["50度", "100度", "150度", "200度"],
-        correctAnswer: 9
+        question: "8. この単語の意味は？ [Wednesday]",
+        options: ["月曜", "水曜", "金曜", "日曜"],
+        correctAnswer: 1
     },
     {
-        question: "2. 水が沸騰(ふっとう)する温度は何度か？",
-        options: ["50度", "100度", "150度", "200度"],
-        correctAnswer: 10
+        question: "9. この単語の意味は？ [summer]",
+        options: ["春", "夏", "秋", "冬"],
+        correctAnswer: 1
+    },
+    {
+        question: "10. この単語の意味は？ [winter]",
+        options: ["春", "夏", "秋", "冬"],
+        correctAnswer: 3
     }   
 ];
 
