@@ -12,7 +12,7 @@ const questions = [
     {
         question: "1. ある列車は1時間に60Km進みます。3時間で何キロメートル進みますか？ ",
         options: ["120Km", "180Km", "150Km", "130Km"],
-        correctAnswer: 2
+        correctAnswer: 1
     },
     {
         question: "2. クラスの人数が28人で、4つのグループに分けます。一グループ何人ですか？",
