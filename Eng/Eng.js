@@ -105,44 +105,66 @@ function addRadioListeners() {
 
 // 正解をチェックする関数
 function checkAnswers() {
-    let correctCount = 0;
-    let allAnswered = true;
+    let correctCount = 0;//間違えた数　初期値0
+    let allAnswered = true;//全問といたか
 
     questions.forEach((question, index) => {
+        // 選択されたラジオボタンを取得
         const selectedOption = document.querySelector(`input[name="question${index}"]:checked`);
+        // 選択肢のラベルを取得
         const answerList = document.querySelectorAll(`input[name="question${index}"] + label`);
-
+    
+        // もし選択肢が選ばれていなかった場合
         if (!selectedOption) {
-            allAnswered = false;
-            return;
+            allAnswered = false;  // 未回答だよーだよー
+            return;  
         }
-
+    
+        
         const selectedIndex = parseInt(selectedOption.value);
+        
+        // 各ラベルに対して、正解・不正解のクラスを設定
         answerList.forEach((label, i) => {
-            label.classList.remove("correct", "incorrect");
+            label.classList.remove("correct", "incorrect"); // 以前のクラスを削除
+    
+            // 正解のラベルに "correct" クラスを追加
             if (i === question.correctAnswer) {
                 label.classList.add("correct");
-            } else if (i === selectedIndex) {
+            }
+            // 不正解のラベルに "incorrect" クラスを追加
+            else if (i === selectedIndex) {
                 label.classList.add("incorrect");
             }
         });
-
+    
+        // 正解カウント
         if (selectedIndex === question.correctAnswer) {
             correctCount++;
         }
     });
-
+    
+    // 未回答の問題があればアラートを表示
     if (!allAnswered) {
         alert("すべての問題に答えてください！");
-        return;
+        return;  // 未回答の問題があれば結果を表示しない
     }
-
+    
+    // 結果表示
     const resultElement = document.getElementById("result");
-    resultElement.textContent = `あなたの正解数は ${correctCount} / ${questions.length} です！`;
+    const a=document.getElementById("a");
+    result.innerHTML = `あなたの正解数は ${correctCount} / ${questions.length} です！
+    <a href="./../Honpen/Honpen.html"><br>ホームに戻る</a>`;
+    
 
+   
+    //正解数　問題数
+
+    // 正しい場合緑色で表示
     if (correctCount === questions.length) {
         resultElement.style.color = "green";
-    } else {
+    }
+    // 間違っている場合赤色で表示
+    else {
         resultElement.style.color = "red";
     }
-}
+}    
