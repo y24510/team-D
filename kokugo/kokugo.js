@@ -33,7 +33,7 @@ const questions = [
     {
         question: "5. この漢字の読みは:専ら",
         options: ["もっぱら", "ほこら", "みずから", "せせら"],
-        correctAnswer: 1
+        correctAnswer: 0
     },
     {
         question: "6. この漢字の読みは:檬果",
