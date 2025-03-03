@@ -35,9 +35,9 @@ const questions = [
         correctAnswer: 2
     },
     {
-        question: "6. 地球の内部で最も高温の場所はどこか？",
-        options: ["地殻", "マントル", "外核", "内核"],
-        correctAnswer: 3
+        question: "6.一冊の本を15分ずつ毎日読んで、2週間後に何時間読みましたか？ ",
+        options: ["３時間", "３時間３０分", "４時間", "４時間３０分"],
+        correctAnswer: 2
     },
     {
         question: "7.10の2乗はどれですか？",
