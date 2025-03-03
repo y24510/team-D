@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* クイズのコンテナ */
+#quiz-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 問題 */
+.question {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 選択肢リスト */
+.answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answers li {
+    padding: 10px;
+    background: #e3f2fd;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* ホバーエフェクト */
+.answers li:hover {
+    background: #bbdefb;
+}
+
+/* ラジオボタンの非表示 */
+.answers input {
+    display: none;
+}
+
+/* 選択時のデザイン */
+.answers input:checked + label {
+    background:rgb(204, 228, 26);
+    color: white;
+    font-weight: bold;
+}
+
+/* 正解不正解の色 */
+.correct {
+    background-color:rgb(55, 171, 59) !important;
+}
+
+.incorrect {
+    background-color:rgb(172, 60, 71) !important;
+}
+
+/* 結果のスタイル */
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* ボタンのスタイル */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+label.selected {
+    background-color:rgb(224, 133, 48);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: 2px solid transparent; /* 通常の枠を透明にする */
+    outline: 2px solid #0056b3; /* 外側に枠を追加 */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    outline: 2px solid #003d75; /* ホバー時に枠の色を濃くする */
+}
+/* ラジオボタンを非表示にする */
+.answers input {
+    display: none; /* ラジオボタンを非表示にする */
+}
+
+/* ラベルをクリック可能にし、選択されたスタイルを適用 */
+.answers label {
+    display: block;
+    padding: 10px;
+    background: #e3f2fd;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ラベルをクリックした際に選択されたスタイルを追加 */
+.answers input:checked + label {
+    background: rgb(204, 228, 26);
+    color: white;
+    font-weight: bold;
+}
+
+/* ラベルにホバー効果を追加 */
+.answers label:hover {
+    background: #bbdefb;
+}
