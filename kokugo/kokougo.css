@@ -143,3 +143,9 @@ button:hover {
 .answers label:hover {
     background: #bbdefb;
 }
+
+.Quiz_Timer {
+    color:red;
+    font-size:50px;
+    font-weight: bold;
+}

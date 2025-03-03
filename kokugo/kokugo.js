@@ -33,7 +33,7 @@ const questions = [
     {
         question: "5. この漢字の読みは:専ら",
         options: ["もっぱら", "ほこら", "みずから", "せせら"],
-        correctAnswer: 1
+        correctAnswer: 0
     },
     {
         question: "6. この漢字の読みは:檬果",
@@ -179,11 +179,13 @@ function checkAnswers() {
         resultElement.style.color = "red";
     }
 }    
+//--------------------------------------------------------------
 const nowtime = document.querySelector(".Quiz_Timer")
 function TimerQ(){
     let timer = 120; 
     Timer1 = setTimeout(() => { //120秒たったら終了処理
         nowtime.innerHTML = `時間切れ！！`;
+        alert("時間切れです！再挑戦してね！");
         result.innerHTML = `<a href="./../Honpen/Honpen.html"><br>ホームに戻る</a>`;
     }, 120000);
     Timer2 = setInterval (() => { //1秒ごとにタイマー更新
