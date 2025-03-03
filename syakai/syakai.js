@@ -217,3 +217,23 @@ function checkAnswers() {
         resultElement.style.color = "red";
     }
 }    
+const nowtime = document.querySelector(".Quiz_Timer")
+function TimerQ(){
+    let timer = 120; 
+    Timer1 = setTimeout(() => { //120秒たったら終了処理
+        nowtime.innerHTML = `時間切れ！！`;
+        result.innerHTML = `<a href="./../Honpen/Honpen.html"><br>ホームに戻る</a>`;
+    }, 120000);
+    Timer2 = setInterval (() => { //1秒ごとにタイマー更新
+        nowtime.innerHTML = `残り${timer}秒`;
+        timer--;
+        if(timer < 0){
+            nowtime.innerHTML = `時間切れ！！`;
+            result.innerHTML = `<a href="./../Honpen/Honpen.html"><br>ホームに戻る</a>`;
+        }
+    }, 1000);
+    
+}
+window.onload = function timer(){
+    TimerQ();
+}
