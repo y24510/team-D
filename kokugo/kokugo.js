@@ -193,7 +193,6 @@ function TimerQ(){
         timer--;
         if(timer < 0){
             nowtime.innerHTML = `時間切れ！！`;
-            alert("時間切れです！再挑戦してね！");
             result.innerHTML = `<a href="./../Honpen/Honpen.html"><br>ホームに戻る</a>`;
         }
     }, 1000);
