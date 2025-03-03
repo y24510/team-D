@@ -6,7 +6,7 @@ const GoSya = document.querySelector(".swi_Sya")
 const Goret = document.querySelector(".swi_Ret")
 
 GoKok.addEventListener('click',function(){
-    window.location.href = './../kokugo/kokugo.html';
+    window.location.href = './../kokugo/kokukgo.html';
 },false);
 
 GoSan.addEventListener('click',function(){
